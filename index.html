@@ -54,7 +54,7 @@
                     class="header-contact-link"
                     href="mailto:info@devstudio.com"
                   >
-                    <svg class="envelope" width="16px" height="12">
+                    <svg class="envelope" width="16" height="12">
                       <use href="./images/icons.svg#icon-envelope"></use>
                     </svg>
                     info@devstudio.com
@@ -93,6 +93,65 @@
                     <use href="./images/icons.svg#Vector"></use>
                   </svg>
                 </button>
+                <form>
+                  <label class="main-label-title"
+                    >Zostaw swoje dane w formularzu poniżej</label
+                  >
+                  <label for="username" class="main-label-name position-class"
+                    >Imie</label
+                  ><input
+                    id="username"
+                    type="text"
+                    class="main-input-name position-class"
+                    placeholder=" "
+                  />
+                  <label for="telephone" class="main-label-name position-class"
+                    >Telefon</label
+                  ><input
+                    id="telephone"
+                    type="tel"
+                    class="main-input-name position-class"
+                    placeholder=" "
+                  />
+                  <label for="email" class="main-label-name position-class"
+                    >Email</label
+                  ><input
+                    id="email"
+                    type="email"
+                    class="main-input-name position-class"
+                    placeholder=" "
+                  />
+                  <label for="textarea" class="main-label-name position-class"
+                    >Komentarz</label
+                  ><textarea
+                    name="textarea"
+                    id="textarea"
+                    type="textarea"
+                    placeholder="Wprowadź tekst"
+                    class="form-textarea"
+                    cols="30"
+                    rows="10"
+                  ></textarea>
+                  <div class="regulamin-checkbox-container">
+                    <input
+                      type="checkbox"
+                      name="language"
+                      value="bhp"
+                      id="python"
+                    /><label class="form-label" for="bhp"
+                      >Oświadczam iż akceptuję
+                      <a class="regulamin-link" href="#">Regulamin</a> i
+                      <a class="regulamin-link" href="#"
+                        >Politykę Prywatności.</a
+                      >
+                    </label>
+                  </div>
+                  <div class="regulamin-button-container">
+                    <button class="regulamin-button" type="submit">
+                      Wyślij
+                    </button>
+                  </div>
+                </form>
               </div>
             </div>
           </section>
