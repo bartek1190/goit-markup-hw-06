@@ -701,6 +701,9 @@ textarea::placeholder {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .form-label {
   font-size: 14px;
@@ -709,11 +712,7 @@ textarea::placeholder {
   letter-spacing: 0.03em;
   color: var(--contact-color);
 }
-.hidden-checkbox {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none;
-}
+
 .regulamin-link {
   color: var(--general-blue-color);
   text-decoration: underline;
@@ -742,4 +741,18 @@ textarea::placeholder {
 }
 .position-container {
   position: relative;
+}
+.hidden-checkbox {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.custom-input {
+  padding: 0;
+}
+.magic-checkbox {
+  margin-right: 8px;
+}
+.magic-checkbox:hover {
+  fill: #2196f3;
 }
