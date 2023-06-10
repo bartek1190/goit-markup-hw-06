@@ -139,38 +139,35 @@
                   </div>
 
                   <label for="textarea" class="main-label-name position-class"
-                    >Komentarz</label
-                  ><textarea
-                    name="textarea"
-                    id="textarea"
-                    type="textarea"
-                    placeholder="Wprowadź tekst"
-                    class="form-textarea"
-                    cols="30"
-                    rows="10"
-                  ></textarea>
-                  <div class="regulamin-checkbox-container">
+                    >Komentarz
+                    <textarea
+                      name="textarea"
+                      id="textarea"
+                      placeholder="Wprowadź tekst"
+                      class="form-textarea"
+                      cols="30"
+                      rows="10"
+                    ></textarea>
+                  </label>
+                  <label class="acceptance-label">
                     <input
-                      class="custom-input hidden-checkbox"
+                      class="checkbox-hidden"
                       type="checkbox"
-                      name="language"
-                      value="bhp"
-                      id="python"
+                      name="acceptance"
+                      required
                     />
-                    <svg class="magic-checkbox" width="16" height="15">
-                      <use href="images/icons.svg#icon-sqarre"></use>
+                    <svg class="checkbox-icon-unchecked" width="16" height="15">
+                      <use href="./images/icons.svg#icon-checkbox"></use>
                     </svg>
                     <svg class="checkbox-icon" width="16" height="15">
-                      <use href="./images/icons.svg#icon-checked"></use>
+                      <use href="./images/icons.svg#icon-tick"></use>
                     </svg>
-                    <label class="form-label" for="bhp"
-                      >Oświadczam iż akceptuję
-                      <a class="regulamin-link" href="#">Regulamin</a> i
-                      <a class="regulamin-link" href="#"
-                        >Politykę Prywatności.</a
-                      >
-                    </label>
-                  </div>
+                    <span class="text-regul">
+                      Oświadczam iż akceptuję
+                      <a class="text-decor" href="">Regulamin</a> i
+                      <a class="text-decor" href="">Politykę Prywatności.</a>
+                    </span>
+                  </label>
                   <div class="regulamin-button-container">
                     <button class="regulamin-button" type="submit">
                       Wyślij

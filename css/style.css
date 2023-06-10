@@ -647,7 +647,6 @@ img {
   text-align: left;
   margin-bottom: 4px;
 }
-
 .main-input-name {
   padding-left: 42px;
   height: 40px;
@@ -711,6 +710,7 @@ textarea::placeholder {
   line-height: 1.7em;
   letter-spacing: 0.03em;
   color: var(--contact-color);
+  display: flex;
 }
 
 .regulamin-link {
@@ -727,6 +727,8 @@ textarea::placeholder {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 40px;
 }
 .regulamin-button {
   color: var(--white-font-color);
@@ -742,17 +744,50 @@ textarea::placeholder {
 .position-container {
   position: relative;
 }
-.hidden-checkbox {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none;
+.acceptance-label {
+  display: flex;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin-left: 55px;
+  align-items: center;
+  margin-top: 16px;
 }
-.custom-input {
-  padding: 0;
+
+.checkbox-hidden {
+  visibility: hidden;
+  position: absolute;
 }
-.magic-checkbox {
-  margin-right: 8px;
+
+.checkbox-icon-unchecked {
+  position: relative;
 }
-.magic-checkbox:hover {
-  fill: #2196f3;
+
+.checkbox-icon {
+  position: absolute;
+  margin-top: 4px;
+  margin-left: 0.5px;
+  margin-bottom: 3px;
+  visibility: hidden;
+  fill: #ffffff;
+  border-radius: 2px;
+  transition-property: background-color, visibility;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox-hidden:checked ~ .checkbox-icon {
+  visibility: visible;
+  background-color: #2196f3;
+}
+
+.text-regul {
+  margin-left: 8px;
+}
+
+.text-decor {
+  color: #2196f3;
+  text-decoration: underline;
 }
