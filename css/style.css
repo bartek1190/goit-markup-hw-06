@@ -604,6 +604,7 @@ img {
   align-items: center;
   justify-content: center;
   gap: 24px;
+  cursor: pointer;
 }
 .icons-svg-send {
   fill: var(--white-font-color);
@@ -729,6 +730,7 @@ textarea::placeholder {
   margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 40px;
+  cursor: pointer;
 }
 .regulamin-button {
   color: var(--white-font-color);
